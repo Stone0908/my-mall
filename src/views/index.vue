@@ -102,7 +102,7 @@ export default {
         console.log(_this.shopCar)
 
         //如果购物车中存在商品 将购物车中的商品数量 赋值给商品列表
-        if(_this.shopCar.length > 0 ) {
+        if( _this.shopCar !== null && _this.shopCar.length > 0 ) {
           for(let i=0;i<_this.shopCar.length;i++){
             for(let j=0;j<_this.goodslist.length;j++){
               if(_this.goodslist[j].cGoodsid == _this.shopCar[i].cGoodsid){
